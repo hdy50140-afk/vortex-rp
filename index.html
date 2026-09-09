@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vortex RP | الموقع الرسمي</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Tahoma,sans-serif;
+  background:#08060d;
+  color:#fff;
+  line-height:1.7;
+}
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1000;
+  background:rgba(8,6,13,.9);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid #28183d;
+}
+nav{
+  max-width:1150px;
+  margin:auto;
+  padding:16px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  font-size:25px;
+  font-weight:900;
+  color:#b86cff;
+  letter-spacing:1px;
+}
+nav a{
+  color:#ddd;
+  text-decoration:none;
+  margin:0 8px;
+  font-weight:bold;
+}
+nav a:hover{color:#c16cff}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:120px 20px 60px;
+  background:
+    radial-gradient(circle at center,#34105a 0%,#11091b 38%,#08060d 75%);
+}
+.hero h1{
+  font-size:clamp(48px,10vw,100px);
+  font-weight:1000;
+  color:#fff;
+  text-shadow:0 0 35px #9b4dff;
+}
+.hero h1 span{color:#b86cff}
+.hero p{
+  max-width:700px;
+  margin:20px auto;
+  color:#cfc7d8;
+  font-size:20px;
+}
+.buttons{margin-top:30px}
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+  margin:6px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:.2s;
+}
+.btn-main{
+  background:#a94cff;
+  color:#fff;
+  box-shadow:0 0 25px #8129c9;
+}
+.btn-main:hover{transform:translateY(-3px)}
+.btn-dark{
+  border:1px solid #5d377d;
+  color:#fff;
+  background:#120c19;
+}
+
+section{
+  max-width:1150px;
+  margin:auto;
+  padding:90px 20px;
+}
+.title{
+  text-align:center;
+  margin-bottom:45px;
+}
+.title h2{
+  font-size:38px;
+  color:#c078ff;
+}
+.title p{color:#aaa}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card{
+  background:linear-gradient(145deg,#171020,#0d0913);
+  border:1px solid #30203f;
+  padding:25px;
+  border-radius:16px;
+  transition:.2s;
+}
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#9349c8;
+}
+.card .icon{
+  font-size:38px;
+  margin-bottom:10px;
+}
+.card h3{
+  color:#d18cff;
+  margin-bottom:8px;
+}
+.card p{color:#aaa}
+
+.news{
+  border-right:4px solid #a94cff;
+}
+.news small{color:#9c78b7}
+
+.download{
+  text-align:center;
+  background:linear-gradient(145deg,#160b22,#09070d);
+  border:1px solid #342044;
+  border-radius:20px;
+  padding:45px 20px;
+}
+.download h2{
+  font-size:38px;
+  color:#fff;
+}
+.download p{
+  color:#aaa;
+  margin:12px 0 25px;
+}
+
+.faq details{
+  background:#110c17;
+  border:1px solid #2d2038;
+  margin:12px 0;
+  padding:18px;
+  border-radius:10px;
+}
+.faq summary{
+  cursor:pointer;
+  font-weight:bold;
+  color:#d28aff;
+}
+.faq p{
+  color:#aaa;
+  margin-top:10px;
+}
+
+footer{
+  text-align:center;
+  padding:35px 20px;
+  border-top:1px solid #28183d;
+  color:#888;
+}
+footer strong{color:#b86cff}
+
+@media(max-width:700px){
+  nav{flex-direction:column;gap:10px}
+  nav a{font-size:13px;margin:3px}
+  .hero h1{font-size:55px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <div class="logo">VORTEX RP</div>
+  <div>
+    <a href="#home">الرئيسية</a>
+    <a href="#news">الأخبار</a>
+    <a href="#download">التحميل</a>
+    <a href="#shop">الشحن</a>
+    <a href="#support">الدعم</a>
+  </div>
+</nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div>
+    <h1>VORTEX <span>RP</span></h1>
+    <p>
+      عالم رول بلاي مفتوح تعيش بيه حياتك بالطريقة اللي تختارها.
+      شرطة، عصابات، وظائف، سيارات، فعاليات ومغامرات بانتظارك.
+    </p>
+
+    <div class="buttons">
+      <a class="btn btn-main" href="#download">🎮 تحميل اللعبة</a>
+      <a class="btn btn-dark" href="#about">اكتشف اللعبة</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="title">
+    <h2>شنو هي Vortex RP؟</h2>
+    <p>عيش القصة بطريقتك</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🚓</div>
+      <h3>الشرطة</h3>
+      <p>انضم للشرطة وحافظ على الأمن والنظام داخل المدينة.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔫</div>
+      <h3>العصابات</h3>
+      <p>كوّن عصابتك وخوض المنافسات والسيطرة على مناطق المدينة.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💼</div>
+      <h3>الوظائف</h3>
+      <p>اختار مهنتك واجمع المال وابني مستقبلك داخل المدينة.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🏙️</div>
+      <h3>عيش حياتك</h3>
+      <p>اصنع شخصيتك وعلاقاتك وقصتك الخاصة داخل عالم Vortex RP.</p>
+    </div>
+  </div>
+</section>
+
+<section id="news">
+  <div class="title">
+    <h2>آخر الأخبار والتحديثات</h2>
+    <p>تابع كل جديد في Vortex RP</p>
+  </div>
+
+  <div class="cards">
+    <div class="card news">
+      <small>تحديث جديد</small>
+      <h3>تحديث Vortex RP</h3>
+      <p>ترقبوا التحديثات والميزات الجديدة القادمة للعبة.</p>
+    </div>
+
+    <div class="card news">
+      <small>إعلان</small>
+      <h3>فعاليات جديدة</h3>
+      <p>فعاليات ومنافسات جديدة راح تنضاف للمدينة قريباً.</p>
+    </div>
+
+    <div class="card news">
+      <small>قريباً</small>
+      <h3>مفاجآت Vortex</h3>
+      <p>أشياء جديدة ومميزة قادمة إلى عالم Vortex RP.</p>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="download">
+    <h2>🎮 حمّل Vortex RP</h2>
+    <p>استعد لدخول المدينة وابدأ قصتك الخاصة.</p>
+
+    <!-- لاحقاً نحط هنا رابط تحميل اللعبة الحقيقي -->
+    <a class="btn btn-main" href="#">تحميل اللعبة</a>
+  </div>
+</section>
+
+<section id="shop">
+  <div class="title">
+    <h2>💎 متجر الشحن</h2>
+    <p>اشحن رصيدك واستفد من المميزات داخل اللعبة</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">💎</div>
+      <h3>الباقة البرونزية</h3>
+      <p>باقة شحن للمبتدئين.</p>
+      <br>
+      <a class="btn btn-main" href="#">شحن الآن</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">💎💎</div>
+      <h3>الباقة الفضية</h3>
+      <p>مميزات ورصيد إضافي.</p>
+      <br>
+      <a class="btn btn-main" href="#">شحن الآن</a>
+    </div>
+
+    <div class="card">
+      <div class="icon">💎💎💎</div>
+      <h3>الباقة الذهبية</h3>
+      <p>أفضل الباقات للاعبين.</p>
+      <br>
+      <a class="btn btn-main" href="#">شحن الآن</a>
+    </div>
+  </div>
+</section>
+
+<section id="support">
+  <div class="title">
+    <h2>🎧 الدعم الفني</h2>
+    <p>إذا واجهتك مشكلة، فريق الدعم موجود لمساعدتك.</p>
+  </div>
+
+  <div class="download">
+    <h3>تحتاج مساعدة؟</h3>
+    <p>تواصل معنا عبر قنوات Vortex RP الرسمية.</p>
+    <a class="btn btn-main" href="#">تواصل مع الدعم</a>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="title">
+    <h2>❓ الأسئلة الشائعة</h2>
+  </div>
+
+  <details>
+    <summary>شلون أحمل اللعبة؟</summary>
+    <p>اضغط على زر تحميل اللعبة من الموقع واتبع تعليمات التثبيت.</p>
+  </details>
+
+  <details>
+    <summary>شلون أسوي حساب؟</summary>
+    <p>سيتم توفير التسجيل الرسمي عند إطلاق نظام الحسابات.</p>
+  </details>
+
+  <details>
+    <summary>شلون أشحن؟</summary>
+    <p>ادخل إلى قسم الشحن واختار الباقة المناسبة لك.</p>
+  </details>
+
+  <details>
+    <summary>وين أتابع أخبار اللعبة؟</summary>
+    <p>تابع قسم الأخبار في الموقع لمعرفة آخر التحديثات والفعاليات.</p>
+  </details>
+</section>
+
+</main>
+
+<footer>
+  © 2026 <strong>Vortex RP</strong> — جميع الحقوق محفوظة
+</footer>
+
+</body>
+  </html>
